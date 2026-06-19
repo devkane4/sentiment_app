@@ -1,0 +1,5 @@
+.venv/
+**/__pycache__/
+models/tekitou.py
+models/test.txt
+/main.py
