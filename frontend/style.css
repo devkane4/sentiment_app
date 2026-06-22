@@ -1,0 +1,38 @@
+/* ボタンの基本スタイル */
+.analyze-Button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* テキストとスピナーの間隔 */
+}
+
+/* ボタンが押せない状態のスタイル */
+.analyze-Button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ぐるぐる（スピナー）の見た目 */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+  border-top-color: transparent; /* 一部を透明にして隙間を作る */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite; /* 無限に回転させる */
+}
+
+/* 回転のアニメーション */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 非表示にするためのクラス */
+.hidden {
+  display: none;
+}

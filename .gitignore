@@ -3,3 +3,5 @@
 models/tekitou.py
 models/test.txt
 /main.py
+.vercel
+.env*

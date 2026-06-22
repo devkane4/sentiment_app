@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>感情分析アプリ</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>感情分析アプリ</h1>
@@ -17,8 +18,11 @@
 
     <br><br>
 
-    <button id="analyzeButton">分析</button>
-
+    <button id="analyzeButton" class="analyze-Button">
+        <span class="button-text">分析</span>
+        <span class="spinner hidden"></span>
+    </button>
+        
     <h2>結果</h2>
     <div id="resultArea">ここに結果が表示されます</div>
     <script src="script.js"></script>
