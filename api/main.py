@@ -12,10 +12,6 @@ _janome = Tokenizer()
 def mecab_tokenizer(text):
     return [token.surface for token in _janome.tokenize(text)]
 
-
-# 【修正】上部にあった古い sys.modules['__main__'] の偽装記述はすべて削除しました
-
-
 app = FastAPI()
 
 origins = [
@@ -42,8 +38,8 @@ TMP_DIR = "/tmp"
 MODEL_PATH = os.path.join(TMP_DIR, "final_sentiment_model_v2.joblib")
 VECTORIZER_PATH = os.path.join(TMP_DIR, "latest_vectorizer_v2.joblib")
 
-SUPABASE_MODEL_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/final_sentiment_model_v4.joblib"
-SUPABASE_VECTORIZER_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/latest_vectorizer_v4.joblib"
+SUPABASE_MODEL_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/final_sentiment_model_v5.joblib"
+SUPABASE_VECTORIZER_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/latest_vectorizer_v5.joblib"
 
 if not os.path.exists(MODEL_PATH):
     urllib.request.urlretrieve(SUPABASE_MODEL_URL, MODEL_PATH)
