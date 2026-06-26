@@ -42,8 +42,8 @@ TMP_DIR = "/tmp"
 MODEL_PATH = os.path.join(TMP_DIR, "final_sentiment_model_v2.joblib")
 VECTORIZER_PATH = os.path.join(TMP_DIR, "latest_vectorizer_v2.joblib")
 
-SUPABASE_MODEL_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/final_sentiment_model_v3.joblib"
-SUPABASE_VECTORIZER_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/latest_vectorizer_v3.joblib"
+SUPABASE_MODEL_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/final_sentiment_model_v4.joblib"
+SUPABASE_VECTORIZER_URL = "https://mmsgymltwmcyfydwuzde.supabase.co/storage/v1/object/public/models/latest_vectorizer_v4.joblib"
 
 if not os.path.exists(MODEL_PATH):
     urllib.request.urlretrieve(SUPABASE_MODEL_URL, MODEL_PATH)
